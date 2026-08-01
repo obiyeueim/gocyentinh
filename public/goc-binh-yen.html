@@ -353,6 +353,47 @@
       gap: 8px;
     }
 
+    .nav-account-link {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 0 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.78);
+      font-size: 13.5px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: transform .18s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .nav-account-link svg {
+      width: 17px;
+      height: 17px;
+      flex: 0 0 auto;
+    }
+
+    .nav-account-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(8, 123, 112, 0.45);
+      box-shadow: 0 8px 20px rgba(32, 73, 66, 0.12);
+    }
+
+    .nav-account-link.login {
+      border-color: #087b70;
+      background: #087b70;
+      color: #fff;
+    }
+
+    .nav-account-link.admin {
+      background: #fff8dc;
+      border-color: rgba(178, 135, 18, 0.42);
+      color: #715500;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -1856,6 +1897,35 @@
       margin-top: 22px;
     }
 
+    @media (max-width: 1500px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links.open {
+        display: flex;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--paper-2);
+        border-bottom: 1px solid var(--line);
+        padding: 14px 20px;
+        gap: 4px;
+        box-shadow: var(--shadow-md);
+      }
+
+      .nav-links.open a {
+        padding: 12px 8px;
+        font-size: 16px;
+      }
+
+      .menu-toggle {
+        display: grid;
+      }
+    }
+
     @media (max-width: 720px) {
       .quiz-scale {
         grid-template-columns: repeat(2, 1fr);
@@ -1973,6 +2043,17 @@
         display: grid;
       }
 
+      .nav-motion,
+      .nav-right .btn-help {
+        display: none;
+      }
+
+      .nav-account-link {
+        min-height: 40px;
+        padding: 0 10px;
+        font-size: 12.5px;
+      }
+
       .brand-tag {
         display: none;
       }
@@ -1994,6 +2075,35 @@
     }
 
     @media (max-width: 440px) {
+
+      .nav-inner {
+        gap: 8px;
+      }
+
+      .nav-right {
+        gap: 5px;
+      }
+
+      .brand-name {
+        font-size: 16px;
+      }
+
+      .nav-account-link {
+        padding: 0 8px;
+      }
+
+      .nav-account-link svg {
+        display: none;
+      }
+
+      .nav-account-link.admin span {
+        font-size: 0;
+      }
+
+      .nav-account-link.admin span::after {
+        content: "Admin";
+        font-size: 12px;
+      }
 
       .cards,
       .cards.cols-3 {
@@ -2074,13 +2184,21 @@
       </nav>
 
       <div class="nav-right">
-        <a class="icon-btn" href="/dang-nhap" title="Đăng nhập" aria-label="Đăng nhập">
+        <a class="nav-account-link login" href="/dang-nhap" aria-label="Đăng nhập">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="8" r="4" />
             <path d="M4 21a8 8 0 0 1 16 0" />
           </svg>
+          <span>Đăng nhập</span>
         </a>
-        <button class="icon-btn" id="motionToggle" type="button" aria-pressed="false"
+        <a class="nav-account-link admin" href="/quan-ly" aria-label="Mở trang quản lý hỗ trợ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3 4.5 6v5.2c0 4.7 3.2 8 7.5 9.8 4.3-1.8 7.5-5.1 7.5-9.8V6L12 3Z" />
+            <path d="M9 12h6M12 9v6" />
+          </svg>
+          <span>Quản lý</span>
+        </a>
+        <button class="icon-btn nav-motion" id="motionToggle" type="button" aria-pressed="false"
           title="Bật/tắt hiệu ứng chuyển động" aria-label="Bật hoặc tắt hiệu ứng chuyển động">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
             <path d="M3 12h4l2-7 4 14 2-7h6" />

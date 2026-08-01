@@ -67,6 +67,12 @@
   box-shadow: 0 10px 30px rgba(32, 73, 66, 0.08);
 }
 
+@media (max-width: 720px) {
+  .gaming-motion .brand-tag {
+    display: none;
+  }
+}
+
 .gaming-motion .brand-mark {
   border-color: #0f8f82;
   background: linear-gradient(145deg, #23b9a6, #0f766e);
