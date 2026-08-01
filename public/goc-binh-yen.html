@@ -2031,6 +2031,8 @@
     }
   </style>
   <link rel="stylesheet" href="/motion/gaming-motion.css" />
+  <link rel="stylesheet" href="/motion/light-theme.css" />
+  <link rel="stylesheet" href="/support/support-center.css" />
 </head>
 
 <body>
@@ -2065,13 +2067,19 @@
       <nav class="nav-links" id="navLinks" aria-label="Điều hướng chính">
         <a href="#ve-goc">Về góc này</a>
         <a href="#trai-qua">Điều bạn trải qua</a>
-        <a href="#trac-nghiem">Tự kiểm tra</a>
+        <a href="#support-center" data-support-tab="quiz">Tự kiểm tra</a>
         <a href="#tu-cham-soc">Tự chăm sóc</a>
         <a href="#giup-ban">Giúp một người bạn</a>
         <a href="#giup-do">Tìm giúp đỡ</a>
       </nav>
 
       <div class="nav-right">
+        <a class="icon-btn" href="/dang-nhap.html" title="Đăng nhập" aria-label="Đăng nhập">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 21a8 8 0 0 1 16 0" />
+          </svg>
+        </a>
         <button class="icon-btn" id="motionToggle" type="button" aria-pressed="false"
           title="Bật/tắt hiệu ứng chuyển động" aria-label="Bật hoặc tắt hiệu ứng chuyển động">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
@@ -2084,7 +2092,7 @@
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
-        <a class="btn btn-help" href="#giup-do"><span class="dot" aria-hidden="true"></span>Cần hỗ trợ ngay</a>
+        <a class="btn btn-help" href="#support-center" data-support-tab="share"><span class="dot" aria-hidden="true"></span>Cần hỗ trợ ngay</a>
       </div>
     </div>
   </header>
@@ -3177,6 +3185,13 @@
       submitBtn.addEventListener('click', function () {
         if (answeredCount() < TOTAL) return;
         var sub = score();
+        window.GBY_STRESS_RESULT = {
+          depression: sub.D,
+          anxiety: sub.A,
+          stress: sub.S,
+          summary: 'DASS-21 tự báo cáo trong 7 ngày gần nhất'
+        };
+        document.dispatchEvent(new CustomEvent('gby:stress-result', { detail: window.GBY_STRESS_RESULT }));
         resCards.innerHTML = '';
         var maxLv = 0;
         var pending = [];
@@ -3200,8 +3215,12 @@
             pending.forEach(function (p) { p[0].style.width = p[1] + '%'; });
           });
         });
-        var y = resultsBox.getBoundingClientRect().top + window.pageYOffset - 80;
-        window.scrollTo({ top: y, behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+        if (trac.closest('.support-drawer')) {
+          resultsBox.scrollIntoView({ block: 'start', behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+        } else {
+          var y = resultsBox.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({ top: y, behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+        }
       });
 
       document.getElementById('quizReset').addEventListener('click', function () {
@@ -3210,8 +3229,14 @@
         submitBtn.disabled = true;
         resultsBox.classList.remove('show');
         ctaBox.classList.remove('show');
-        var y = trac.getBoundingClientRect().top + window.pageYOffset - 70;
-        window.scrollTo({ top: y, behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+        window.GBY_STRESS_RESULT = null;
+        document.dispatchEvent(new CustomEvent('gby:stress-result', { detail: null }));
+        if (trac.closest('.support-drawer')) {
+          trac.scrollIntoView({ block: 'start', behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+        } else {
+          var y = trac.getBoundingClientRect().top + window.pageYOffset - 70;
+          window.scrollTo({ top: y, behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+        }
       });
 
       if (window.ScrollTrigger && typeof window.ScrollTrigger.refresh === 'function') {
@@ -3219,6 +3244,7 @@
       }
     })();
   </script>
+  <script src="/support/support-center.js"></script>
 </body>
 
 </html>

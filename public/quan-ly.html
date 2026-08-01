@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f9f7">
+  <title>Quản lý hỗ trợ · Góc Bình Yên</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/support/portal.css">
+</head>
+<body>
+  <header class="portal-topbar">
+    <a class="portal-brand" href="/"><span class="portal-mark" aria-hidden="true"></span>Góc Bình Yên · Quản lý hỗ trợ</a>
+    <div style="display:flex;gap:8px"><a class="portal-link secondary" href="/">Trang chính</a><button class="portal-button-secondary" id="adminLogout" type="button">Đăng xuất</button></div>
+  </header>
+  <main class="admin-shell">
+    <div class="admin-titlebar">
+      <div><h1>Những người đang cần được tiếp cận</h1><p id="adminIdentity">Đang kiểm tra quyền truy cập...</p></div>
+      <button class="portal-button" id="adminRefresh" type="button">Làm mới dữ liệu</button>
+    </div>
+    <section class="admin-stats" aria-label="Tổng quan yêu cầu">
+      <div class="admin-stat"><span>Tất cả</span><strong id="statTotal">0</strong></div>
+      <div class="admin-stat"><span>Mới nhận</span><strong id="statNew">0</strong></div>
+      <div class="admin-stat"><span>Khẩn cấp chưa xong</span><strong id="statUrgent">0</strong></div>
+      <div class="admin-stat"><span>Đã hoàn tất</span><strong id="statResolved">0</strong></div>
+    </section>
+    <div class="admin-controls">
+      <label><span class="sr-only">Tìm kiếm</span><input class="portal-search" id="adminSearch" type="search" placeholder="Tìm tên, liên hệ hoặc nội dung..."></label>
+      <label><span class="sr-only">Trạng thái</span><select class="portal-search" id="adminStatus"><option value="all">Mọi trạng thái</option><option value="new">Mới nhận</option><option value="contacting">Đang liên hệ</option><option value="in_progress">Đang hỗ trợ</option><option value="resolved">Đã hoàn tất</option></select></label>
+      <button class="portal-button" id="adminFilter" type="button">Lọc</button>
+    </div>
+    <div class="portal-status" id="adminStatusMessage" role="status"></div>
+    <section class="admin-content">
+      <div class="admin-list"><div class="admin-list-scroll" id="adminRequestList"></div></div>
+      <div class="admin-detail" id="adminRequestDetail"><div class="admin-empty">Chọn một yêu cầu để xem thông tin liên hệ và nội dung chia sẻ.</div></div>
+    </section>
+  </main>
+  <script src="/support/admin.js"></script>
+</body>
+</html>

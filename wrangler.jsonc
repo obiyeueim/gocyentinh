@@ -8,6 +8,14 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "d1_databases": [
+    {
+      "binding": "SUPPORT_DB",
+      "database_name": "goc-binh-yen-support",
+      "database_id": "e0280418-b503-4d06-ae99-d9c843dd8232",
+      "migrations_dir": "migrations"
+    }
+  ],
   "observability": {
     "enabled": true
   }

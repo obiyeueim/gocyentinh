@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f9f7">
+  <title>Đăng nhập · Góc Bình Yên</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/support/portal.css">
+</head>
+<body>
+  <header class="portal-topbar">
+    <a class="portal-brand" href="/"><span class="portal-mark" aria-hidden="true"></span>Góc Bình Yên</a>
+    <a class="portal-link secondary" href="/">Về trang chính</a>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-copy" aria-labelledby="auth-heading">
+      <h1 id="auth-heading">Một nơi để bạn được lắng nghe.</h1>
+      <p>Tài khoản giúp bạn theo dõi trạng thái lời nhắn hỗ trợ. Nội dung chia sẻ không hiển thị công khai và chỉ người phụ trách mới có quyền truy cập.</p>
+      <div class="auth-points" aria-label="Cam kết riêng tư">
+        <div class="auth-point">Mật khẩu được băm trước khi lưu</div>
+        <div class="auth-point">Phiên đăng nhập dùng cookie bảo mật</div>
+        <div class="auth-point">Không công khai kết quả sàng lọc</div>
+      </div>
+    </section>
+    <section class="auth-card" aria-label="Đăng nhập hoặc tạo tài khoản">
+      <div class="auth-tabs" role="tablist">
+        <button class="auth-tab" type="button" role="tab" data-auth-tab="login" aria-selected="true">Đăng nhập</button>
+        <button class="auth-tab" type="button" role="tab" data-auth-tab="register" aria-selected="false">Tạo tài khoản</button>
+      </div>
+      <form class="auth-form" id="loginForm">
+        <div class="portal-field"><label for="loginEmail">Email</label><input id="loginEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="portal-field"><label for="loginPassword">Mật khẩu</label><input id="loginPassword" name="password" type="password" required minlength="10" maxlength="128" autocomplete="current-password"></div>
+        <div class="portal-status" id="loginStatus" role="status"></div>
+        <button class="portal-button" type="submit">Đăng nhập</button>
+      </form>
+      <form class="auth-form" id="registerForm" hidden>
+        <div class="portal-field"><label for="registerName">Họ tên</label><input id="registerName" name="name" required minlength="2" maxlength="80" autocomplete="name"></div>
+        <div class="portal-field"><label for="registerEmail">Email</label><input id="registerEmail" name="email" type="email" required autocomplete="email"></div>
+        <div class="portal-field"><label for="registerPassword">Mật khẩu</label><input id="registerPassword" name="password" type="password" required minlength="10" maxlength="128" autocomplete="new-password"></div>
+        <p class="auth-help">Dùng ít nhất 10 ký tự. Không sử dụng lại mật khẩu của email hoặc mạng xã hội.</p>
+        <div class="portal-status" id="registerStatus" role="status"></div>
+        <button class="portal-button" type="submit">Tạo tài khoản</button>
+      </form>
+      <div class="auth-session" id="authSession" hidden></div>
+    </section>
+  </main>
+  <script src="/support/login.js"></script>
+</body>
+</html>

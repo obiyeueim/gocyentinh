@@ -3,6 +3,7 @@ import Script from "next/script";
 import type { CSSProperties } from "react";
 import "./globals.css";
 import "../../public/motion/gaming-motion.css";
+import "../../public/motion/light-theme.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
