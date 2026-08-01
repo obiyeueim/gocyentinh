@@ -2043,7 +2043,6 @@
         display: grid;
       }
 
-      .nav-motion,
       .nav-right .btn-help {
         display: none;
       }
@@ -2198,12 +2197,6 @@
           </svg>
           <span>Quản lý</span>
         </a>
-        <button class="icon-btn nav-motion" id="motionToggle" type="button" aria-pressed="false"
-          title="Bật/tắt hiệu ứng chuyển động" aria-label="Bật hoặc tắt hiệu ứng chuyển động">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <path d="M3 12h4l2-7 4 14 2-7h6" />
-          </svg>
-        </button>
         <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-expanded="false"
           aria-controls="navLinks" aria-label="Mở menu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
@@ -3059,21 +3052,6 @@
         var open = navLinks.classList.toggle('open');
         menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         menuToggle.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
-      });
-
-      /* ---------- Motion toggle ---------- */
-      var motionToggle = document.getElementById('motionToggle');
-      function setMotion(enabled) {
-        if (enabled) { root.classList.remove('reduce-motion'); }
-        else { root.classList.add('reduce-motion'); }
-        motionToggle.setAttribute('aria-pressed', enabled ? 'false' : 'true');
-        motionToggle.setAttribute('title', enabled ? 'Tắt hiệu ứng chuyển động' : 'Bật hiệu ứng chuyển động');
-      }
-      // aria-pressed=true means "reduced motion is ON"
-      motionToggle.setAttribute('aria-pressed', prefersReduced ? 'true' : 'false');
-      motionToggle.addEventListener('click', function () {
-        var currentlyReduced = root.classList.contains('reduce-motion');
-        setMotion(currentlyReduced); // if reduced, enable motion; else reduce it
       });
 
       /* ---------- Reveal animations ---------- */
