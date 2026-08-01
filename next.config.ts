@@ -1,6 +1,22 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: "/goc-binh-yen",
+        destination: "/goc-binh-yen.html",
+      },
+      {
+        source: "/dang-nhap",
+        destination: "/dang-nhap.html",
+      },
+      {
+        source: "/quan-ly",
+        destination: "/quan-ly.html",
+      },
+    ];
+  },
   async redirects() {
     return [
       {
