@@ -67,9 +67,40 @@
   box-shadow: 0 10px 30px rgba(32, 73, 66, 0.08);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1500px) {
+  .gaming-motion .nav-links {
+    display: none;
+  }
+
+  .gaming-motion .nav-links.open {
+    display: flex;
+  }
+
+  .gaming-motion .menu-toggle {
+    display: grid;
+  }
+}
+
+@media (max-width: 900px) {
   .gaming-motion .brand-tag {
     display: none;
+  }
+
+  .gaming-motion .nav-motion,
+  .gaming-motion .nav-right .btn-help {
+    display: none;
+  }
+
+  .gaming-motion .brand {
+    min-width: 0;
+  }
+
+  .gaming-motion .brand-name {
+    display: block;
+    max-width: 140px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
