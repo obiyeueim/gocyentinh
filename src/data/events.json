@@ -1,0 +1,43 @@
+[
+  {
+    "id": "event-001",
+    "title": "Open Day 2026",
+    "description": "Tham quan trường, trải nghiệm lớp học và tư vấn tuyển sinh 1:1.",
+    "startDate": "2026-08-08",
+    "time": "07:30 – 11:30",
+    "location": "Khuôn viên Trường THPT Minh Khai",
+    "type": "Tuyển sinh",
+    "featured": true
+  },
+  {
+    "id": "event-002",
+    "title": "Tuần lễ định hướng học sinh khối 10",
+    "description": "Làm quen môi trường, phương pháp học và các câu lạc bộ.",
+    "startDate": "2026-08-24",
+    "endDate": "2026-08-28",
+    "time": "08:00 – 16:00",
+    "location": "Nhà đa năng",
+    "type": "Học thuật",
+    "featured": true
+  },
+  {
+    "id": "event-003",
+    "title": "Đêm nhạc Gieo Mầm",
+    "description": "Chương trình nghệ thuật gây quỹ học bổng cho học sinh vượt khó.",
+    "startDate": "2026-09-19",
+    "time": "18:30 – 21:00",
+    "location": "Sân khấu ngoài trời",
+    "type": "Cộng đồng",
+    "featured": false
+  },
+  {
+    "id": "event-004",
+    "title": "Ngày hội STEM & Innovation",
+    "description": "Triển lãm dự án khoa học, robotics và sáng kiến xanh của học sinh.",
+    "startDate": "2026-10-10",
+    "time": "08:00 – 15:30",
+    "location": "Khối phòng thí nghiệm",
+    "type": "Ngoại khóa",
+    "featured": true
+  }
+]

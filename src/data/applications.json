@@ -1,0 +1,50 @@
+[
+  {
+    "id": "MK2026001",
+    "studentName": "Nguyễn Minh Anh",
+    "dateOfBirth": "2011-04-16",
+    "gender": "Nữ",
+    "currentSchool": "THCS Nguyễn Du",
+    "desiredGrade": "10",
+    "parentName": "Nguyễn Hoàng Nam",
+    "phone": "0901234567",
+    "email": "nam.nguyen@example.com",
+    "address": "Quận 3, TP. Hồ Chí Minh",
+    "status": "Đang xét duyệt",
+    "submittedAt": "2026-06-20",
+    "updatedAt": "2026-06-23",
+    "note": "Hồ sơ học bạ đã được xác thực."
+  },
+  {
+    "id": "MK2026002",
+    "studentName": "Trần Gia Huy",
+    "dateOfBirth": "2011-09-02",
+    "gender": "Nam",
+    "currentSchool": "THCS Lê Quý Đôn",
+    "desiredGrade": "10",
+    "parentName": "Trần Thu Hà",
+    "phone": "0912345678",
+    "email": "ha.tran@example.com",
+    "address": "Quận 1, TP. Hồ Chí Minh",
+    "status": "Cần bổ sung",
+    "submittedAt": "2026-06-18",
+    "updatedAt": "2026-06-24",
+    "note": "Vui lòng bổ sung bản sao giấy khai sinh trước ngày 30/6."
+  },
+  {
+    "id": "MK2026003",
+    "studentName": "Lê Khánh Linh",
+    "dateOfBirth": "2011-11-21",
+    "gender": "Nữ",
+    "currentSchool": "THCS Trần Văn Ơn",
+    "desiredGrade": "10",
+    "parentName": "Lê Quốc Bảo",
+    "phone": "0987654321",
+    "email": "bao.le@example.com",
+    "address": "Quận Bình Thạnh, TP. Hồ Chí Minh",
+    "status": "Đủ điều kiện",
+    "submittedAt": "2026-06-12",
+    "updatedAt": "2026-06-25",
+    "note": "Mời phụ huynh hoàn tất thủ tục nhập học trực tuyến."
+  }
+]

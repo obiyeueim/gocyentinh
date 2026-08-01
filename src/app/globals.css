@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #17211f;
+  --surface: #f6f8f7;
+  --brand: #047857;
+  --brand-dark: #064e3b;
+  --accent: #fbbf24;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+  --shadow-card: 0 12px 40px rgba(15, 23, 42, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+::selection {
+  background: #a7f3d0;
+  color: #022c22;
+}
+
+@layer components {
+  .site-container {
+    width: min(100% - 2rem, 80rem);
+    margin-inline: auto;
+  }
+
+  .section-space {
+    padding-block: clamp(4rem, 8vw, 7rem);
+  }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #047857;
+  }
+
+  .button-primary {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    background: #047857;
+    padding: 0.7rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: white;
+    box-shadow: 0 8px 20px rgba(4, 120, 87, 0.2);
+    transition:
+      transform 160ms ease,
+      background 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .button-primary:hover {
+    background: #065f46;
+    box-shadow: 0 10px 26px rgba(4, 120, 87, 0.28);
+    transform: translateY(-1px);
+  }
+
+  .button-primary:focus-visible,
+  .button-secondary:focus-visible {
+    outline: 2px solid #047857;
+    outline-offset: 3px;
+  }
+
+  .button-secondary {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background: white;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: #1e293b;
+    transition:
+      border 160ms ease,
+      background 160ms ease;
+  }
+
+  .button-secondary:hover {
+    border-color: #6ee7b7;
+    background: #ecfdf5;
+    color: #065f46;
+  }
+
+  .input-control {
+    min-height: 3rem;
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    background: white;
+    padding: 0.7rem 0.9rem;
+    color: #0f172a;
+    outline: none;
+    transition:
+      border 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .input-control::placeholder {
+    color: #94a3b8;
+  }
+
+  .input-control:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.14);
+  }
+
+  .field-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 750;
+    color: #334155;
+  }
+
+  .surface-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
+  }
+}
+
+@keyframes soft-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-soft-rise {
+  animation: soft-rise 550ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

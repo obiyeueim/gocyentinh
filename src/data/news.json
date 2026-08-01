@@ -1,0 +1,110 @@
+[
+  {
+    "id": "news-001",
+    "slug": "le-khai-giang-nam-hoc-2026-2027",
+    "title": "Lễ khai giảng năm học 2026–2027: Khởi đầu hành trình mới",
+    "excerpt": "Hơn 1.500 học sinh cùng thầy cô chào đón năm học mới trong không khí trang trọng, ấm áp và đầy cảm hứng.",
+    "content": [
+      "Sáng ngày 5/9, Trường THPT Minh Khai long trọng tổ chức lễ khai giảng năm học 2026–2027 với sự tham dự của đại diện Sở Giáo dục và Đào tạo, phụ huynh, giáo viên cùng toàn thể học sinh.",
+      "Năm học mới đánh dấu bước phát triển quan trọng trong chiến lược giáo dục toàn diện của nhà trường, tập trung vào năng lực tự học, tư duy sáng tạo và trách nhiệm cộng đồng.",
+      "Trong khuôn khổ chương trình, nhà trường trao 35 suất học bổng Khai Tâm cho học sinh có thành tích nổi bật và các em có hoàn cảnh khó khăn vươn lên trong học tập."
+    ],
+    "category": "Tin nhà trường",
+    "image": "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1400&q=85",
+    "publishedAt": "2026-09-05",
+    "author": "Ban Truyền thông",
+    "pinned": true,
+    "readTime": 4,
+    "tags": ["khai giảng", "năm học mới", "học bổng"]
+  },
+  {
+    "id": "news-002",
+    "slug": "thong-bao-tuyen-sinh-lop-10",
+    "title": "Thông báo tuyển sinh lớp 10 năm học 2026–2027",
+    "excerpt": "Nhà trường công bố chỉ tiêu, phương thức xét tuyển và các mốc thời gian quan trọng dành cho học sinh lớp 9.",
+    "content": [
+      "Năm học 2026–2027, Trường THPT Minh Khai tuyển 600 học sinh lớp 10 cho 15 lớp, trong đó có các lớp định hướng STEM, Ngoại ngữ và Khoa học xã hội.",
+      "Phụ huynh có thể nộp hồ sơ trực tuyến trên cổng tuyển sinh của nhà trường hoặc nộp trực tiếp tại Văn phòng Tuyển sinh từ thứ Hai đến thứ Bảy.",
+      "Nhà trường tổ chức ngày hội Open Day để học sinh tham quan khuôn viên, trải nghiệm lớp học và gặp gỡ giáo viên tư vấn."
+    ],
+    "category": "Tin nhà trường",
+    "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1400&q=85",
+    "publishedAt": "2026-04-18",
+    "author": "Hội đồng Tuyển sinh",
+    "pinned": true,
+    "readTime": 5,
+    "tags": ["tuyển sinh", "lớp 10", "hồ sơ"]
+  },
+  {
+    "id": "news-003",
+    "slug": "doi-tuyen-robotics-dat-giai-nhat",
+    "title": "Đội tuyển Robotics giành giải Nhất cấp thành phố",
+    "excerpt": "Dự án robot hỗ trợ phân loại rác của học sinh Minh Khai được đánh giá cao về tính sáng tạo và khả năng ứng dụng.",
+    "content": [
+      "Vượt qua 42 đội thi, đội tuyển Robotics của trường xuất sắc giành giải Nhất với sản phẩm robot nhận diện và phân loại rác bằng thị giác máy tính.",
+      "Sản phẩm là kết quả của sáu tháng nghiên cứu tại Makerspace, dưới sự hướng dẫn của giáo viên Vật lý và Tin học.",
+      "Thành tích tiếp tục khẳng định hiệu quả của chương trình giáo dục STEM và tinh thần học tập qua dự án tại nhà trường."
+    ],
+    "category": "Thành tích",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=85",
+    "publishedAt": "2026-03-28",
+    "author": "Tổ Khoa học Tự nhiên",
+    "pinned": false,
+    "readTime": 3,
+    "tags": ["robotics", "STEM", "thành tích"]
+  },
+  {
+    "id": "news-004",
+    "slug": "ngay-hoi-sach-va-van-hoa-doc",
+    "title": "Ngày hội Sách và Văn hóa đọc: Mỗi trang sách, một chân trời",
+    "excerpt": "Không gian thư viện mở, hoạt động đổi sách và cuộc thi kể chuyện thu hút đông đảo học sinh tham gia.",
+    "content": [
+      "Ngày hội Sách năm nay mang đến nhiều hoạt động trải nghiệm như đổi sách, thiết kế bìa sách, giới thiệu tác phẩm yêu thích và tọa đàm cùng tác giả trẻ.",
+      "Hơn 2.000 đầu sách được học sinh, phụ huynh và đối tác trao tặng cho thư viện nhà trường.",
+      "Sự kiện góp phần nuôi dưỡng thói quen đọc, khả năng tự học và kết nối tri thức trong cộng đồng Minh Khai."
+    ],
+    "category": "Ngoại khóa",
+    "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=85",
+    "publishedAt": "2026-03-15",
+    "author": "Câu lạc bộ Sách",
+    "pinned": false,
+    "readTime": 4,
+    "tags": ["sách", "thư viện", "ngoại khóa"]
+  },
+  {
+    "id": "news-005",
+    "slug": "doi-moi-kiem-tra-danh-gia",
+    "title": "Đổi mới kiểm tra, đánh giá theo năng lực học sinh",
+    "excerpt": "Nhà trường triển khai đa dạng hình thức đánh giá, tăng hoạt động dự án và phản hồi cá nhân hóa.",
+    "content": [
+      "Từ học kỳ II, các tổ chuyên môn tăng cường đánh giá qua sản phẩm, thuyết trình, hồ sơ học tập và dự án liên môn.",
+      "Học sinh được cung cấp tiêu chí rõ ràng trước mỗi nhiệm vụ và nhận phản hồi theo từng giai đoạn để chủ động cải thiện.",
+      "Cách tiếp cận này giúp việc đánh giá trở thành một phần của quá trình học tập, thay vì chỉ là điểm số cuối kỳ."
+    ],
+    "category": "Tin giáo dục",
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=85",
+    "publishedAt": "2026-02-22",
+    "author": "Phòng Học vụ",
+    "pinned": false,
+    "readTime": 6,
+    "tags": ["giáo dục", "đánh giá", "năng lực"]
+  },
+  {
+    "id": "news-006",
+    "slug": "chung-ket-hung-bien-tieng-anh",
+    "title": "Chung kết cuộc thi hùng biện tiếng Anh MK Speak Up",
+    "excerpt": "Mười hai thí sinh xuất sắc tranh tài với chủ đề công dân toàn cầu và phát triển bền vững.",
+    "content": [
+      "Vòng chung kết MK Speak Up diễn ra tại hội trường đa năng với phần thuyết trình, phản biện và xử lý tình huống hoàn toàn bằng tiếng Anh.",
+      "Ban giám khảo gồm giáo viên tiếng Anh, chuyên gia giáo dục và đại diện trường đại học đối tác.",
+      "Cuộc thi tạo môi trường thực hành ngôn ngữ tích cực, giúp học sinh rèn sự tự tin và năng lực trình bày trước công chúng."
+    ],
+    "category": "Cuộc thi",
+    "image": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?auto=format&fit=crop&w=1400&q=85",
+    "publishedAt": "2026-02-10",
+    "author": "Tổ Ngoại ngữ",
+    "pinned": false,
+    "readTime": 4,
+    "tags": ["tiếng Anh", "hùng biện", "cuộc thi"]
+  }
+]

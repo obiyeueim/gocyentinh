@@ -1,0 +1,66 @@
+[
+  {
+    "id": "facility-library",
+    "name": "Thư viện Ánh Dương",
+    "category": "Thư viện",
+    "description": "Không gian đọc mở hai tầng, hơn 28.000 đầu sách và khu học nhóm linh hoạt.",
+    "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "features": ["28.000+ đầu sách", "Thư viện số", "06 phòng học nhóm", "Khu đọc yên tĩnh"],
+    "capacity": 260,
+    "accessibility": ["Thang máy", "Lối đi xe lăn", "Bàn đọc điều chỉnh độ cao"],
+    "virtualTourAvailable": true
+  },
+  {
+    "id": "facility-classroom",
+    "name": "Phòng học thông minh",
+    "category": "Phòng học",
+    "description": "Hệ thống 45 phòng học thoáng sáng với màn hình tương tác và thiết bị hỗ trợ học tập.",
+    "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "features": ["Màn hình tương tác", "Wifi 6", "Điều hòa không khí", "Camera học liệu"],
+    "capacity": 40,
+    "accessibility": ["Bàn học linh hoạt", "Cửa rộng 1,2m", "Hệ thống hỗ trợ nghe"],
+    "virtualTourAvailable": true
+  },
+  {
+    "id": "facility-lab",
+    "name": "Tổ hợp phòng thí nghiệm STEM",
+    "category": "Phòng thí nghiệm",
+    "description": "Phòng thực hành Lý – Hóa – Sinh, Robotics và Makerspace đạt chuẩn an toàn.",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "features": ["04 phòng bộ môn", "Makerspace", "Khu Robotics", "Tủ an toàn hóa chất"],
+    "capacity": 36,
+    "accessibility": ["Bàn thực hành thấp", "Chỉ dẫn tương phản cao", "Bộ cảnh báo trực quan"],
+    "virtualTourAvailable": true
+  },
+  {
+    "id": "facility-bus",
+    "name": "Dịch vụ xe đưa đón an toàn",
+    "category": "Xe đưa đón",
+    "description": "12 tuyến xe phủ các quận trung tâm, theo dõi hành trình và điểm danh điện tử.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1400&q=85",
+    "images": [
+      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "features": ["12 tuyến xe", "GPS thời gian thực", "Camera hành trình", "Nhân viên giám sát"],
+    "capacity": 45,
+    "accessibility": ["Bậc lên xuống hỗ trợ", "Ưu tiên ghế đầu", "Hỗ trợ theo nhu cầu"],
+    "virtualTourAvailable": false
+  }
+]
