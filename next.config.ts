@@ -1,15 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: "/",
-          destination: "/goc-binh-yen.html",
-        },
-      ],
-    };
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/goc-binh-yen",
+        permanent: false,
+      },
+    ];
   },
   turbopack: {
     root: process.cwd(),

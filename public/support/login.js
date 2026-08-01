@@ -2,7 +2,7 @@
   "use strict";
 
   var params = new URLSearchParams(window.location.search);
-  var nextValue = params.get("next") || "/?support=account";
+  var nextValue = params.get("next") || "/goc-binh-yen?support=account";
 
   function safeNext() {
     try {
@@ -92,7 +92,7 @@
       session.hidden = false;
       session.innerHTML = '<h2>Bạn đã đăng nhập</h2><p class="auth-help" id="sessionIdentity"></p><div class="auth-points"><a class="portal-button" id="sessionContinue" href="#">Tiếp tục</a><button class="portal-button-secondary" id="sessionLogout" type="button">Đăng xuất</button></div>';
       document.getElementById("sessionIdentity").textContent = payload.user.name + " · " + payload.user.email;
-      document.getElementById("sessionContinue").href = payload.user.role === "admin" && nextValue === "/?support=account" ? "/quan-ly.html" : safeNext();
+      document.getElementById("sessionContinue").href = payload.user.role === "admin" && nextValue === "/goc-binh-yen?support=account" ? "/quan-ly" : safeNext();
       document.getElementById("sessionLogout").addEventListener("click", async function () {
         await requestJson("/api/auth/logout", { method: "POST", body: "{}" });
         window.location.reload();

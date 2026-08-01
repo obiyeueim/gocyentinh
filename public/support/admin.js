@@ -155,14 +155,14 @@
     try {
       var session = await requestJson("/api/auth/me", { method: "GET", headers: {} });
       if (!session.user || session.user.role !== "admin") {
-        window.location.replace("/dang-nhap.html?next=%2Fquan-ly.html");
+        window.location.replace("/dang-nhap?next=%2Fquan-ly");
         return;
       }
       document.getElementById("adminIdentity").textContent = session.user.name + " · " + session.user.email;
       await loadRequests(true);
     } catch (error) {
       if (error.status === 401 || error.status === 403) {
-        window.location.replace("/dang-nhap.html?next=%2Fquan-ly.html");
+        window.location.replace("/dang-nhap?next=%2Fquan-ly");
       } else {
         showStatus(error.message, "error");
       }
@@ -176,7 +176,7 @@
   });
   document.getElementById("adminLogout").addEventListener("click", async function () {
     await requestJson("/api/auth/logout", { method: "POST", body: "{}" });
-    window.location.replace("/dang-nhap.html");
+    window.location.replace("/dang-nhap");
   });
 
   initialize();

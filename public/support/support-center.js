@@ -193,13 +193,13 @@
     if (!currentUser) {
       account.innerHTML =
         '<div class="support-account-card"><strong>Bạn chưa đăng nhập</strong><p class="support-intro">Bạn vẫn có thể gửi lời nhắn riêng tư. Đăng nhập giúp bạn theo dõi trạng thái xử lý.</p>' +
-        '<div class="support-account-actions"><a class="support-action" href="/dang-nhap.html?next=%2F%3Fsupport%3Daccount">Đăng nhập</a><a class="support-action secondary" href="/dang-nhap.html?mode=register&next=%2F%3Fsupport%3Daccount">Tạo tài khoản</a></div></div>';
+        '<div class="support-account-actions"><a class="support-action" href="/dang-nhap?next=%2Fgoc-binh-yen%3Fsupport%3Daccount">Đăng nhập</a><a class="support-action secondary" href="/dang-nhap?mode=register&next=%2Fgoc-binh-yen%3Fsupport%3Daccount">Tạo tài khoản</a></div></div>';
       return;
     }
 
     account.innerHTML =
       '<div class="support-account-card"><strong id="supportAccountName"></strong><p class="support-intro" id="supportAccountEmail"></p><div class="support-account-actions">' +
-      (currentUser.role === "admin" ? '<a class="support-action" href="/quan-ly.html">Mở trang quản lý</a>' : "") +
+      (currentUser.role === "admin" ? '<a class="support-action" href="/quan-ly">Mở trang quản lý</a>' : "") +
       '<button class="support-action secondary" id="supportLogout" type="button">Đăng xuất</button></div></div><div class="support-requests" id="supportRequests"></div>';
     document.getElementById("supportAccountName").textContent = currentUser.name;
     document.getElementById("supportAccountEmail").textContent = currentUser.email;
