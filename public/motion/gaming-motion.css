@@ -1,0 +1,533 @@
+:root.gaming-motion {
+  color-scheme: dark;
+  --gm-black: #070806;
+  --gm-black-2: #0d0f0b;
+  --gm-panel: #12140f;
+  --gm-panel-raised: #181b12;
+  --gm-ink: #f4f6e8;
+  --gm-muted: #a6aa96;
+  --gm-neon: #efff19;
+  --gm-neon-hot: #f8ff70;
+  --gm-danger: #ff335f;
+  --gm-line: rgba(239, 255, 25, 0.2);
+  --gm-line-hot: rgba(239, 255, 25, 0.72);
+  --gm-glow: 0 0 14px rgba(239, 255, 25, 0.3), 0 0 42px rgba(239, 255, 25, 0.13);
+
+  --paper: var(--gm-black);
+  --paper-2: var(--gm-panel);
+  --ink: var(--gm-ink);
+  --ink-soft: #c2c6b4;
+  --ink-faint: var(--gm-muted);
+  --line: rgba(239, 255, 25, 0.12);
+  --line-strong: var(--gm-line);
+  --coral: var(--gm-neon);
+  --coral-soft: #262b08;
+  --coral-ink: var(--gm-neon);
+  --iris: var(--gm-neon);
+  --iris-soft: #222706;
+  --iris-ink: var(--gm-neon);
+  --sage: #8dff4d;
+  --sage-soft: #17250e;
+  --sage-ink: #a8ff74;
+  --gold: var(--gm-neon);
+  --gold-soft: #292d08;
+  --gold-ink: var(--gm-neon);
+  --night: #090a08;
+  --night-2: #11130e;
+  --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.22);
+  --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 32px 90px rgba(0, 0, 0, 0.55);
+}
+
+.gaming-motion body {
+  background: var(--gm-black);
+  color: var(--gm-ink);
+}
+
+.gaming-motion body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(239, 255, 25, 0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239, 255, 25, 0.026) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
+.gaming-motion .aurora {
+  display: none;
+}
+
+.gaming-motion .grain {
+  z-index: -1;
+  opacity: 0.13;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgba(255, 255, 255, 0.12) 4px
+  );
+}
+
+.gaming-motion ::selection {
+  background: var(--gm-neon);
+  color: var(--gm-black);
+}
+
+.gaming-motion :focus-visible {
+  outline-color: var(--gm-neon);
+  box-shadow: var(--gm-glow);
+}
+
+.gaming-motion .nav.solid {
+  background: rgba(7, 8, 6, 0.9);
+  border-bottom: 1px solid var(--gm-line);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.34);
+}
+
+.gaming-motion .brand-mark {
+  border: 1px solid var(--gm-neon);
+  border-radius: 4px;
+  background: var(--gm-neon);
+  box-shadow: var(--gm-glow);
+}
+
+.gaming-motion .brand-mark::after {
+  border-radius: 1px;
+  background: var(--gm-black);
+}
+
+.gaming-motion .brand-name,
+.gaming-motion h1,
+.gaming-motion h2,
+.gaming-motion h3,
+.gaming-motion h4 {
+  color: var(--gm-ink);
+  text-shadow: 0 0 24px rgba(239, 255, 25, 0.035);
+}
+
+.gaming-motion .brand-name,
+.gaming-motion .brand-tag {
+  display: block;
+}
+
+.gaming-motion h1 em,
+.gaming-motion h2 em,
+.gaming-motion .quote span,
+.gaming-motion .kicker,
+.gaming-motion .eyebrow {
+  color: var(--gm-neon);
+  text-shadow: 0 0 18px rgba(239, 255, 25, 0.22);
+}
+
+.gaming-motion .eyebrow::before,
+.gaming-motion .step::before {
+  background: var(--gm-neon);
+  box-shadow: 0 0 12px rgba(239, 255, 25, 0.5);
+}
+
+.gaming-motion .nav-links a:hover,
+.gaming-motion .icon-btn:hover {
+  background: rgba(239, 255, 25, 0.08);
+  color: var(--gm-neon);
+}
+
+.gaming-motion .icon-btn {
+  border-color: var(--gm-line);
+  border-radius: 5px;
+}
+
+.gaming-motion .btn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.gaming-motion .btn-dark,
+.gaming-motion .btn-help,
+.gaming-motion .btn-light,
+.gaming-motion .button-primary {
+  border-color: var(--gm-neon);
+  background: var(--gm-neon);
+  color: #090a06;
+  box-shadow: 0 0 0 rgba(239, 255, 25, 0);
+}
+
+.gaming-motion .btn-ghost,
+.gaming-motion .btn-outline-light,
+.gaming-motion .button-secondary {
+  border-color: var(--gm-line-hot);
+  background: rgba(239, 255, 25, 0.025);
+  color: var(--gm-neon);
+}
+
+.gaming-motion .card,
+.gaming-motion .res,
+.gaming-motion .principle,
+.gaming-motion .res-intro,
+.gaming-motion .friend-flag,
+.gaming-motion .sign,
+.gaming-motion .sign-aside,
+.gaming-motion .disclaimer,
+.gaming-motion .surface-card {
+  border-color: var(--gm-line);
+  border-radius: 7px;
+  background: var(--gm-panel);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.3);
+}
+
+.gaming-motion .breathe,
+.gaming-motion .emergency {
+  border: 1px solid var(--gm-line-hot);
+  border-radius: 8px;
+  background: #090a07;
+  box-shadow: 0 0 0 1px rgba(239, 255, 25, 0.05), var(--shadow-lg);
+}
+
+.gaming-motion .media {
+  border-color: var(--gm-line);
+  border-radius: 7px;
+  background: var(--gm-panel);
+}
+
+.gaming-motion .media img {
+  filter: saturate(0.55) contrast(1.08) brightness(0.74);
+}
+
+.gaming-motion .figure:hover .media img {
+  filter: saturate(0.9) contrast(1.05) brightness(0.88);
+}
+
+.gaming-motion .orb-preview {
+  background: var(--gm-neon);
+  box-shadow: 0 0 28px rgba(239, 255, 25, 0.44), 0 0 90px rgba(239, 255, 25, 0.14);
+}
+
+.gaming-motion .orb-preview .inner {
+  background: var(--gm-black-2);
+}
+
+.gaming-motion .halo {
+  background: rgba(239, 255, 25, 0.08);
+  border: 1px solid rgba(239, 255, 25, 0.16);
+}
+
+.gaming-motion .breather-orb {
+  background: var(--gm-neon);
+  box-shadow: 0 0 36px rgba(239, 255, 25, 0.55), 0 0 100px rgba(239, 255, 25, 0.16);
+}
+
+.gaming-motion .breather-ring {
+  border-color: rgba(239, 255, 25, 0.35);
+  box-shadow: inset 0 0 30px rgba(239, 255, 25, 0.05);
+}
+
+.gaming-motion .breather-orb .b-phase,
+.gaming-motion .breather-orb .b-count {
+  color: #101105;
+}
+
+.gaming-motion .footer {
+  border-color: var(--gm-line);
+  background: #060705;
+}
+
+.gaming-motion .bg-white,
+.gaming-motion .bg-slate-50 {
+  background-color: var(--gm-panel) !important;
+}
+
+.gaming-motion .bg-white\/95,
+.gaming-motion .bg-emerald-950 {
+  background-color: rgba(7, 8, 6, 0.96) !important;
+}
+
+.gaming-motion [class*="bg-[linear-gradient"] {
+  background-image: linear-gradient(
+    90deg,
+    rgba(7, 8, 6, 0.98),
+    rgba(13, 15, 11, 0.94) 58%,
+    rgba(18, 20, 15, 0.82)
+  ) !important;
+}
+
+.gaming-motion .bg-emerald-50,
+.gaming-motion .hover\:bg-emerald-50:hover,
+.gaming-motion .hover\:bg-slate-50:hover {
+  background-color: rgba(239, 255, 25, 0.08) !important;
+}
+
+.gaming-motion .text-slate-900,
+.gaming-motion .text-slate-950,
+.gaming-motion .text-emerald-950 {
+  color: var(--gm-ink) !important;
+}
+
+.gaming-motion .text-slate-600,
+.gaming-motion .text-slate-700 {
+  color: var(--gm-muted) !important;
+}
+
+.gaming-motion .text-emerald-800,
+.gaming-motion .text-emerald-900,
+.gaming-motion .hover\:text-emerald-800:hover,
+.gaming-motion .hover\:text-amber-300:hover {
+  color: var(--gm-neon) !important;
+}
+
+.gaming-motion .border-slate-100,
+.gaming-motion .border-slate-200,
+.gaming-motion .border-slate-200\/80 {
+  border-color: var(--gm-line) !important;
+}
+
+.gaming-motion body > header:not(.nav) {
+  background: rgba(7, 8, 6, 0.94) !important;
+  border-color: var(--gm-line) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4) !important;
+}
+
+.gaming-motion body > header:not(.nav) nav a,
+.gaming-motion body > header:not(.nav) button {
+  border-radius: 5px !important;
+}
+
+.gaming-motion body > footer {
+  background: #060705 !important;
+}
+
+.gaming-motion .gm-interactive {
+  --gm-parallax-y: 0px;
+  --gm-hover-scale: 1;
+  --gm-tilt-x: 0deg;
+  --gm-tilt-y: 0deg;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transform:
+    perspective(900px)
+    translate3d(0, var(--gm-parallax-y), 0)
+    rotateX(var(--gm-tilt-x))
+    rotateY(var(--gm-tilt-y))
+    scale3d(var(--gm-hover-scale), var(--gm-hover-scale), 1);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition:
+    border-color 240ms ease,
+    color 240ms ease,
+    background-color 240ms ease,
+    box-shadow 420ms cubic-bezier(.22, 1, .36, 1),
+    transform 420ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.gaming-motion .gm-interactive::after {
+  position: absolute;
+  inset: -40% auto -40% -55%;
+  z-index: 4;
+  width: 26%;
+  pointer-events: none;
+  content: "";
+  opacity: 0;
+  background: rgba(255, 255, 220, 0.72);
+  filter: blur(5px);
+  transform: translate3d(-220%, 0, 0) skewX(-18deg);
+}
+
+.gaming-motion .gm-interactive:hover,
+.gaming-motion .gm-interactive:focus-visible {
+  --gm-hover-scale: 1.05;
+  z-index: 3;
+  border-color: var(--gm-neon) !important;
+  box-shadow: var(--gm-glow), 0 22px 54px rgba(0, 0, 0, 0.5);
+}
+
+.gaming-motion .gm-interactive:hover::after,
+.gaming-motion .gm-interactive:focus-visible::after {
+  opacity: 0.82;
+  transform: translate3d(780%, 0, 0) skewX(-18deg);
+  transition:
+    transform 720ms cubic-bezier(.22, 1, .36, 1),
+    opacity 160ms ease;
+}
+
+.gm-page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  pointer-events: auto;
+  background: #050604;
+  transform: translate3d(0, 0, 0);
+  contain: layout paint;
+  will-change: transform;
+}
+
+.gm-page-transition[hidden] {
+  display: none;
+}
+
+.gm-transition-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.32;
+  background-image:
+    linear-gradient(rgba(239, 255, 25, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239, 255, 25, 0.12) 1px, transparent 1px);
+  background-size: 38px 38px;
+  transform: translateZ(0);
+}
+
+.gm-transition-core {
+  position: relative;
+  width: min(54vw, 520px);
+  height: 3px;
+  overflow: visible;
+  background: rgba(239, 255, 25, 0.18);
+}
+
+.gm-transition-core::before,
+.gm-transition-core::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: var(--gm-neon);
+  box-shadow: 0 0 16px rgba(239, 255, 25, 0.7), 0 0 44px rgba(239, 255, 25, 0.34);
+  transform: scaleX(0.28);
+}
+
+.gm-transition-core::after {
+  background: var(--gm-danger);
+  opacity: 0;
+  transform: translate3d(8px, 0, 0) scaleX(0.28);
+}
+
+.gm-page-transition.is-glitching {
+  animation: gm-glitch-frame 200ms steps(2, end) both;
+}
+
+.gm-page-transition.is-glitching .gm-transition-grid {
+  animation: gm-grid-slice 200ms steps(3, end) both;
+}
+
+.gm-page-transition.is-glitching .gm-transition-core::before {
+  animation: gm-core-split 200ms steps(2, end) both;
+}
+
+.gm-page-transition.is-glitching .gm-transition-core::after {
+  opacity: 0.82;
+  animation: gm-core-split-alt 200ms steps(2, end) both;
+}
+
+@keyframes gm-glitch-frame {
+  0%, 100% { filter: none; }
+  25% { filter: contrast(1.6) brightness(1.16); transform: translate3d(-3px, 0, 0); }
+  50% { filter: hue-rotate(14deg); transform: translate3d(4px, 0, 0); }
+  75% { filter: contrast(1.35); transform: translate3d(-1px, 0, 0); }
+}
+
+@keyframes gm-grid-slice {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  35% { transform: translate3d(14px, -5px, 0); }
+  70% { transform: translate3d(-9px, 6px, 0); }
+}
+
+@keyframes gm-core-split {
+  0%, 100% { transform: translate3d(0, 0, 0) scaleX(0.28); }
+  50% { transform: translate3d(-18px, -7px, 0) scaleX(0.76); }
+}
+
+@keyframes gm-core-split-alt {
+  0%, 100% { transform: translate3d(8px, 0, 0) scaleX(0.28); }
+  50% { transform: translate3d(25px, 8px, 0) scaleX(0.64); }
+}
+
+@media (max-width: 720px) {
+  .gaming-motion .nav-inner {
+    gap: 8px;
+  }
+
+  .gaming-motion .brand {
+    min-width: 0;
+    gap: 8px;
+  }
+
+  .gaming-motion .brand > span:last-child {
+    min-width: 0;
+  }
+
+  .gaming-motion .brand-name {
+    display: block;
+    overflow: hidden;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .gaming-motion .nav-right {
+    flex: none;
+    gap: 6px;
+  }
+
+  .gaming-motion .btn-help {
+    padding: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .gaming-motion .nav-links.open {
+    background: rgba(7, 8, 6, 0.98);
+    border-color: var(--gm-line);
+  }
+
+  .gaming-motion .gm-interactive:hover,
+  .gaming-motion .gm-interactive:focus-visible {
+    --gm-hover-scale: 1.025;
+  }
+}
+
+@media (max-width: 430px) {
+  .gaming-motion .brand-name {
+    max-width: 88px;
+  }
+
+  .gaming-motion .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .gaming-motion .btn-help {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .gaming-motion .btn-help .dot {
+    display: none;
+  }
+
+  .gaming-motion .btn-help::before {
+    content: "SOS";
+    font-size: 11px;
+    font-weight: 800;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gm-page-transition {
+    display: none !important;
+  }
+
+  .gaming-motion .gm-interactive,
+  .gaming-motion .gm-interactive::after {
+    transition: none !important;
+    transform: none !important;
+  }
+}

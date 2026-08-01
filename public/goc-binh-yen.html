@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="gaming-motion">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#17A2CB" />
+  <meta name="theme-color" content="#070806" />
   <title>Góc Bình Yên · Sức khỏe tinh thần học đường</title>
   <meta name="description"
     content="Góc Bình Yên — một khoảng lặng giữa trường lớp, nơi học sinh được lắng nghe không phán xét, học cách tự chăm sóc sức khỏe tinh thần và tìm sự giúp đỡ khi cần." />
@@ -183,7 +183,7 @@
       left: -12vw;
       top: -10vw;
       background: var(--coral);
-      animation: drift1 34s ease-in-out infinite;
+      animation: drift1 26s ease-in-out infinite;
     }
 
     .blob.b2 {
@@ -192,7 +192,7 @@
       right: -10vw;
       top: 4vw;
       background: var(--iris);
-      animation: drift2 40s ease-in-out infinite;
+      animation: drift2 32s ease-in-out infinite;
     }
 
     .blob.b3 {
@@ -201,7 +201,7 @@
       left: 20vw;
       top: 46vh;
       background: var(--sage);
-      animation: drift3 38s ease-in-out infinite;
+      animation: drift3 30s ease-in-out infinite;
     }
 
     .blob.b4 {
@@ -210,7 +210,7 @@
       right: 6vw;
       top: 66vh;
       background: var(--gold);
-      animation: drift1 42s ease-in-out infinite reverse;
+      animation: drift1 34s ease-in-out infinite reverse;
     }
 
     .grain {
@@ -230,7 +230,7 @@
       }
 
       50% {
-        transform: translate(2vw, 1.5vh) scale(1.035);
+        transform: translate(4vw, 3vh) scale(1.08);
       }
     }
 
@@ -242,7 +242,7 @@
       }
 
       50% {
-        transform: translate(-1.5vw, 2vh) scale(1.04);
+        transform: translate(-3vw, 4vh) scale(1.1);
       }
     }
 
@@ -254,7 +254,7 @@
       }
 
       50% {
-        transform: translate(1.5vw, -1.5vh) scale(1.03);
+        transform: translate(3vw, -3vh) scale(1.06);
       }
     }
 
@@ -267,7 +267,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      transition: background .5s cubic-bezier(.22, 1, .36, 1), box-shadow .5s cubic-bezier(.22, 1, .36, 1), backdrop-filter .5s cubic-bezier(.22, 1, .36, 1);
+      transition: background .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
     }
 
     .nav.solid {
@@ -365,13 +365,13 @@
       border-radius: 999px;
       cursor: pointer;
       border: 1px solid transparent;
-      transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .4s cubic-bezier(.22, 1, .36, 1), background .35s ease, color .35s ease;
+      transition: transform .18s ease, box-shadow .25s ease, background .2s ease, color .2s ease;
       line-height: 1;
       text-align: center;
     }
 
     .btn:active {
-      transform: translateY(1px) scale(.995);
+      transform: translateY(1px) scale(.99);
     }
 
     .btn-dark {
@@ -382,7 +382,7 @@
 
     .btn-dark:hover {
       box-shadow: var(--shadow-md);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
     }
 
     .btn-help {
@@ -391,7 +391,7 @@
     }
 
     .btn-help:hover {
-      transform: translateY(-1px);
+      transform: translateY(-2px);
       box-shadow: 0 12px 28px rgba(217, 121, 92, 0.30);
     }
 
@@ -403,7 +403,7 @@
 
     .btn-ghost:hover {
       background: rgba(18, 56, 74, 0.04);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
     }
 
     .btn-lg {
@@ -416,7 +416,7 @@
       height: 8px;
       border-radius: 50%;
       background: currentColor;
-      animation: pulseDot 2.4s ease-in-out infinite;
+      animation: pulseDot 1.8s ease-in-out infinite;
     }
 
     @keyframes pulseDot {
@@ -424,12 +424,12 @@
       0%,
       100% {
         opacity: .4;
-        transform: scale(.9);
+        transform: scale(.8);
       }
 
       50% {
         opacity: 1;
-        transform: scale(1.08);
+        transform: scale(1.15);
       }
     }
 
@@ -554,18 +554,18 @@
       height: 340px;
       border-radius: 50%;
       background: radial-gradient(circle, rgba(23, 162, 203, 0.28) 0%, rgba(63, 187, 176, 0.16) 45%, rgba(241, 164, 138, 0.0) 72%);
-      animation: haloBreath 11.5s ease-in-out infinite;
+      animation: haloBreath 9s ease-in-out infinite;
     }
 
     @keyframes haloBreath {
 
       0%,
       100% {
-        transform: scale(.96);
+        transform: scale(.9);
       }
 
       50% {
-        transform: scale(1.04);
+        transform: scale(1.12);
       }
     }
 
@@ -581,7 +581,7 @@
       display: grid;
       place-items: center;
       box-shadow: var(--shadow-lg);
-      animation: haloBreath 11.5s ease-in-out infinite;
+      animation: haloBreath 9s ease-in-out infinite;
     }
 
     .reduce-motion .orb-preview {
@@ -899,11 +899,11 @@
       border-radius: var(--r-md);
       padding: 26px 24px 28px;
       box-shadow: var(--shadow-sm);
-      transition: transform .45s cubic-bezier(.22, 1, .36, 1), box-shadow .45s cubic-bezier(.22, 1, .36, 1), border-color .35s ease;
+      transition: transform .28s cubic-bezier(.2, .7, .3, 1), box-shadow .28s ease, border-color .28s ease;
     }
 
     .card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px);
       box-shadow: var(--shadow-md);
       border-color: var(--line-strong);
     }
@@ -1179,11 +1179,11 @@
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
-      transition: transform .45s cubic-bezier(.22, 1, .36, 1), box-shadow .45s cubic-bezier(.22, 1, .36, 1);
+      transition: transform .25s ease, box-shadow .25s ease;
     }
 
     .res:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
       box-shadow: var(--shadow-md);
     }
 
@@ -1468,11 +1468,11 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform .9s cubic-bezier(.22, 1, .36, 1);
+      transition: transform .6s cubic-bezier(.2, .7, .3, 1);
     }
 
     .figure:hover .media img {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
 
     .reduce-motion .figure:hover .media img {
@@ -1524,6 +1524,350 @@
       width: 100%;
       max-width: 230px;
       height: auto;
+    }
+
+    /* ---------- DASS-21 quiz ---------- */
+    .quiz {
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      padding: clamp(28px, 4vw, 52px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .quiz-lead {
+      color: var(--ink-soft);
+      font-size: clamp(15px, 1.4vw, 16.5px);
+      max-width: 46em;
+    }
+
+    .quiz-scale {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 24px 0 6px;
+    }
+
+    .quiz-scale div {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px 13px;
+      font-size: 12px;
+      color: var(--ink-soft);
+      line-height: 1.4;
+    }
+
+    .quiz-scale b {
+      display: block;
+      font-family: var(--f-display);
+      color: var(--iris-ink);
+      font-size: 17px;
+      margin-bottom: 3px;
+    }
+
+    .quiz-form {
+      margin-top: 14px;
+    }
+
+    .quiz-q {
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .quiz-q:first-child {
+      border-top: 0;
+    }
+
+    .qtext {
+      display: flex;
+      gap: 12px;
+      font-size: 15.5px;
+      color: var(--ink);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .qnum {
+      font-family: var(--f-display);
+      color: var(--iris-ink);
+      font-weight: 600;
+      flex: none;
+    }
+
+    .qopts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .qopt {
+      position: relative;
+    }
+
+    .qopt input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+
+    .qopt span {
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid var(--line-strong);
+      border-radius: 12px;
+      padding: 11px 8px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      background: var(--paper);
+      transition: background .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease;
+      line-height: 1.25;
+    }
+
+    .qopt span small {
+      display: block;
+      font-size: 11px;
+      opacity: .7;
+      margin-top: 3px;
+      font-weight: 600;
+    }
+
+    .qopt:hover span {
+      border-color: var(--iris);
+      color: var(--ink);
+    }
+
+    .qopt input:checked+span {
+      background: var(--iris);
+      border-color: var(--iris);
+      color: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .qopt input:checked+span small {
+      opacity: .9;
+    }
+
+    .qopt input:focus-visible+span {
+      outline: 3px solid var(--iris);
+      outline-offset: 2px;
+    }
+
+    .reduce-motion .qopt span {
+      transition: none;
+    }
+
+    .quiz-bar {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .quiz-progress {
+      font-size: 14px;
+      color: var(--ink-faint);
+    }
+
+    .quiz-progress b {
+      color: var(--iris-ink);
+    }
+
+    .btn[disabled],
+    .btn[disabled]:hover {
+      opacity: .4;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .quiz-results {
+      margin-top: 36px;
+      display: none;
+    }
+
+    .quiz-results.show {
+      display: block;
+    }
+
+    .res-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .rcard {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      padding: 24px 22px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .rcard h3 {
+      font-family: var(--f-body);
+      font-size: 16.5px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .rpill {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .rscore {
+      font-family: var(--f-display);
+      font-size: 34px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .rscore span {
+      font-family: var(--f-body);
+      font-size: 13px;
+      color: var(--ink-faint);
+      font-weight: 500;
+    }
+
+    .rbar {
+      height: 8px;
+      border-radius: 99px;
+      background: var(--line);
+      margin: 14px 0 16px;
+      overflow: hidden;
+    }
+
+    .rbar-fill {
+      height: 100%;
+      border-radius: 99px;
+      width: 0;
+      transition: width .8s cubic-bezier(.2, .7, .3, 1);
+    }
+
+    .reduce-motion .rbar-fill {
+      transition: none;
+    }
+
+    .radvice {
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    .lv0 {
+      background: var(--sage-soft);
+      color: var(--sage-ink);
+    }
+
+    .fill0 {
+      background: var(--sage);
+    }
+
+    .lv1 {
+      background: var(--iris-soft);
+      color: var(--iris-ink);
+    }
+
+    .fill1 {
+      background: var(--iris);
+    }
+
+    .lv2 {
+      background: var(--gold-soft);
+      color: var(--gold-ink);
+    }
+
+    .fill2 {
+      background: var(--gold);
+    }
+
+    .lv3 {
+      background: var(--coral-soft);
+      color: var(--coral-ink);
+    }
+
+    .fill3 {
+      background: var(--coral);
+    }
+
+    .lv4 {
+      background: #F6D2C6;
+      color: #B23A1E;
+    }
+
+    .fill4 {
+      background: #C85A3D;
+    }
+
+    .quiz-cta {
+      margin-top: 24px;
+      background: linear-gradient(160deg, var(--coral-soft), var(--paper-2));
+      border: 1px solid rgba(217, 121, 92, 0.28);
+      border-radius: var(--r-md);
+      padding: 22px 26px;
+      display: none;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .quiz-cta.show {
+      display: flex;
+    }
+
+    .quiz-cta p {
+      font-size: 15px;
+      color: #6a2f24;
+      flex: 1;
+      min-width: 220px;
+      line-height: 1.55;
+    }
+
+    .quiz-note {
+      margin-top: 22px;
+      font-size: 13px;
+      color: var(--ink-faint);
+      line-height: 1.6;
+      display: flex;
+      gap: 12px;
+    }
+
+    .quiz-note svg {
+      width: 18px;
+      height: 18px;
+      flex: none;
+      margin-top: 2px;
+      color: var(--gold-ink);
+    }
+
+    .quiz-reset {
+      margin-top: 22px;
+    }
+
+    @media (max-width: 720px) {
+      .quiz-scale {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .qopts {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .res-cards {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* ---------- Responsive ---------- */
@@ -1618,12 +1962,6 @@
         padding: 14px 20px;
         gap: 4px;
         box-shadow: var(--shadow-md);
-        animation: menuIn .62s cubic-bezier(.22, 1, .36, 1) both;
-      }
-
-      @keyframes menuIn {
-        from { opacity: 0; transform: translateY(-8px); }
-        to { opacity: 1; transform: translateY(0); }
       }
 
       .nav-links.open a {
@@ -1692,9 +2030,16 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/motion/gaming-motion.css" />
 </head>
 
 <body>
+
+  <div id="gmPageTransition" class="gm-page-transition" aria-hidden="true">
+    <div class="gm-transition-grid" aria-hidden="true"></div>
+    <div class="gm-transition-core" aria-hidden="true"></div>
+  </div>
+  <noscript><style>.gm-page-transition{display:none!important}</style></noscript>
 
   <a class="skip" href="#noi-dung">Bỏ qua tới nội dung chính</a>
 
@@ -1720,6 +2065,7 @@
       <nav class="nav-links" id="navLinks" aria-label="Điều hướng chính">
         <a href="#ve-goc">Về góc này</a>
         <a href="#trai-qua">Điều bạn trải qua</a>
+        <a href="#trac-nghiem">Tự kiểm tra</a>
         <a href="#tu-cham-soc">Tự chăm sóc</a>
         <a href="#giup-ban">Giúp một người bạn</a>
         <a href="#giup-do">Tìm giúp đỡ</a>
@@ -1790,7 +2136,8 @@
               <span class="kicker">Ba phút cho riêng mình</span>
               <h2>Thở một chút <em>đã</em></h2>
               <p>Khi mọi thứ trở nên quá tải, cơ thể phản ứng trước cả suy nghĩ — tim đập nhanh, hơi thở dồn dập. Bài
-                <strong>thở vuông</strong> này giúp nhịp tim chậm lại và tâm trí lắng xuống.</p>
+                <strong>thở vuông</strong> này giúp nhịp tim chậm lại và tâm trí lắng xuống.
+              </p>
               <p>Nhìn theo vòng tròn: nở ra thì hít vào, thu lại thì thở ra. Không cần làm cho đúng, chỉ cần làm cùng.
               </p>
               <div class="breathe-actions">
@@ -2056,6 +2403,67 @@
 
         <div class="reassure reveal">
           <p>Gọi tên được điều mình đang trải qua, là bạn đã bước một bước rồi đấy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DASS-21 SELF-CHECK ===================== -->
+    <section class="section" id="trac-nghiem">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker k-iris">Tự kiểm tra</span>
+          <h2>Đo mức độ căng thẳng của bạn <em>trong tuần qua</em></h2>
+          <p class="section-lead">Bài trắc nghiệm ngắn dựa trên thang đo y khoa DASS&#8209;21, giúp bạn nhìn rõ hơn mức
+            độ trầm cảm, lo âu và căng thẳng của mình. Trả lời thật lòng theo cảm nhận trong 7 ngày gần đây — không có
+            đáp án đúng hay sai.</p>
+        </div>
+
+        <div class="quiz reveal">
+          <p class="quiz-lead">Với mỗi câu, hãy chọn mức độ đúng với bạn <strong>trong tuần vừa qua</strong>.</p>
+          <div class="quiz-scale" aria-hidden="true">
+            <div><b>0</b> Không đúng chút nào</div>
+            <div><b>1</b> Đúng phần nào · thỉnh thoảng</div>
+            <div><b>2</b> Đúng khá nhiều · phần lớn thời gian</div>
+            <div><b>3</b> Rất đúng · hầu như luôn luôn</div>
+          </div>
+
+          <form class="quiz-form" id="dassForm"><noscript>
+              <p style="color:var(--coral-ink)">Cần bật JavaScript để làm bài trắc nghiệm này.</p>
+            </noscript></form>
+
+          <div class="quiz-bar">
+            <span class="quiz-progress" id="quizProgress">Đã trả lời <b>0</b>/21</span>
+            <button type="button" class="btn btn-dark btn-lg" id="quizSubmit" disabled>Xem kết quả</button>
+          </div>
+
+          <div class="quiz-results" id="quizResults" aria-live="polite">
+            <h3
+              style="font-family:var(--f-display);font-weight:500;font-size:clamp(20px,2.4vw,26px);margin-bottom:6px;">
+              Kết quả của bạn</h3>
+            <p style="color:var(--ink-soft);font-size:14.5px;margin-bottom:22px;max-width:44em;">Điểm càng cao thì mức
+              độ càng rõ. Hãy xem đây như một tấm gương phản chiếu, không phải một bản án.</p>
+            <div class="res-cards" id="resCards"></div>
+
+            <div class="quiz-cta" id="quizCta">
+              <p><strong>Một vài chỉ số đang ở mức cần được quan tâm.</strong> Nếu cảm giác này kéo dài, đừng tự gánh
+                một mình — hãy nói với một người lớn đáng tin hoặc liên hệ một đường dây hỗ trợ.</p>
+              <a class="btn btn-help" href="#giup-do"><span class="dot" aria-hidden="true"></span>Xem nơi để gọi</a>
+            </div>
+
+            <div class="quiz-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 8h.01M11 12h1v4h1" />
+              </svg>
+              <span>Bài trắc nghiệm dựa trên thang đo <strong>DASS&#8209;21</strong> (Lovibond &amp; Lovibond, 1995) và
+                chỉ mang tính sàng lọc, tham khảo — <strong>không phải là chẩn đoán y khoa</strong>. Kết quả phản ánh
+                cảm nhận của bạn trong một tuần và có thể thay đổi. Kết quả chỉ hiển thị trên thiết bị của bạn, không
+                được lưu lại hay gửi đi.</span>
+            </div>
+
+            <button type="button" class="btn btn-ghost quiz-reset" id="quizReset">Làm lại bài</button>
+          </div>
         </div>
       </div>
     </section>
@@ -2456,6 +2864,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="/motion/gaming-motion.js"></script>
   <script>
     (function () {
       'use strict';
@@ -2472,7 +2881,7 @@
       function initLenis() {
         if (prefersReduced || typeof window.Lenis === 'undefined') return;
         try {
-          lenis = new window.Lenis({ duration: 1.45, easing: function (t) { return 1 - Math.pow(1 - t, 3); }, smoothWheel: true });
+          lenis = new window.Lenis({ duration: 1.1, easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); }, smoothWheel: true });
           root.classList.add('lenis-on');
           if (hasST) {
             lenis.on('scroll', window.ScrollTrigger.update);
@@ -2542,43 +2951,26 @@
       });
 
       /* ---------- Reveal animations ---------- */
-      if (hasST && !prefersReduced) {
+      if (window.GAMING_MOTION_MANAGED) {
+        // The reusable gaming motion system owns reveal and parallax animations.
+      } else if (hasST && !prefersReduced) {
         window.gsap.registerPlugin(window.ScrollTrigger);
 
         // Hero load sequence
         var heroEls = window.gsap.utils.toArray('.reveal-hero');
-        window.gsap.set(heroEls, { opacity: 0, y: 22, scale: 0.992, filter: 'blur(8px)', willChange: 'opacity, transform, filter' });
-        window.gsap.to(heroEls, {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          filter: 'blur(0px)',
-          duration: 1.65,
-          ease: 'power2.out',
-          stagger: 0.14,
-          delay: 0.12,
-          clearProps: 'transform,filter,willChange'
-        });
+        window.gsap.set(heroEls, { opacity: 0, y: 26 });
+        window.gsap.to(heroEls, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.11, delay: 0.15 });
 
         // Scroll reveals
         var reveals = window.gsap.utils.toArray('.reveal');
-        reveals.forEach(function (el, index) {
-          window.gsap.set(el, { opacity: 0, y: 24, scale: 0.994, filter: 'blur(6px)', willChange: 'opacity, transform, filter' });
+        reveals.forEach(function (el) {
+          window.gsap.set(el, { opacity: 0, y: 30 });
           window.ScrollTrigger.create({
             trigger: el,
-            start: 'top 94%',
+            start: 'top 88%',
             once: true,
             onEnter: function () {
-              window.gsap.to(el, {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-                filter: 'blur(0px)',
-                duration: 1.45,
-                delay: (index % 3) * 0.07,
-                ease: 'power2.out',
-                clearProps: 'transform,filter,willChange'
-              });
+              window.gsap.to(el, { opacity: 1, y: 0, duration: 0.85, ease: 'power3.out' });
             }
           });
         });
@@ -2665,6 +3057,165 @@
       /* Refresh ScrollTrigger after fonts load to correct positions */
       if (hasST && document.fonts && document.fonts.ready) {
         document.fonts.ready.then(function () { window.ScrollTrigger.refresh(); });
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      'use strict';
+      var form = document.getElementById('dassForm');
+      if (!form) return;
+      var root = document.documentElement;
+
+      var OPTS = [['Không', 0], ['Thỉnh thoảng', 1], ['Khá nhiều', 2], ['Hầu như luôn', 3]];
+
+      var ITEMS = [
+        ['Tôi thấy khó thư giãn, khó lắng dịu lại.', 'S'],
+        ['Tôi thấy khô miệng.', 'A'],
+        ['Tôi hầu như không cảm nhận được một cảm xúc tích cực nào.', 'D'],
+        ['Tôi thấy khó thở — thở gấp, hụt hơi dù không vận động mạnh.', 'A'],
+        ['Tôi thấy khó bắt tay vào làm việc gì đó.', 'D'],
+        ['Tôi có xu hướng phản ứng thái quá với mọi chuyện.', 'S'],
+        ['Tôi bị run (chẳng hạn run tay).', 'A'],
+        ['Tôi thấy mình tiêu tốn rất nhiều năng lượng vì căng thẳng, lo lắng.', 'S'],
+        ['Tôi lo lắng về những tình huống mà mình có thể hoảng loạn và tự làm mình xấu hổ.', 'A'],
+        ['Tôi thấy chẳng có gì để mong chờ ở phía trước.', 'D'],
+        ['Tôi thấy mình dễ bị kích động, bồn chồn.', 'S'],
+        ['Tôi thấy khó để thả lỏng.', 'S'],
+        ['Tôi thấy buồn bã, chán nản.', 'D'],
+        ['Tôi khó chịu khi có điều gì đó cản trở việc tôi đang làm.', 'S'],
+        ['Tôi thấy mình gần như hoảng loạn.', 'A'],
+        ['Tôi không thấy hào hứng với bất cứ điều gì.', 'D'],
+        ['Tôi thấy mình chẳng có mấy giá trị.', 'D'],
+        ['Tôi thấy mình khá dễ tự ái, dễ phật lòng.', 'S'],
+        ['Tôi cảm nhận rõ nhịp tim của mình dù không vận động — tim đập nhanh, hẫng nhịp.', 'A'],
+        ['Tôi thấy sợ hãi mà không có lý do rõ ràng.', 'A'],
+        ['Tôi thấy cuộc sống thật vô nghĩa.', 'D']
+      ];
+      var TOTAL = ITEMS.length;
+      var NAMES = ['Bình thường', 'Nhẹ', 'Vừa', 'Nặng', 'Rất nặng'];
+      var LABELS = { D: 'Trầm cảm', A: 'Lo âu', S: 'Căng thẳng' };
+
+      function band(scale, x) {
+        if (scale === 'D') return x <= 9 ? 0 : x <= 13 ? 1 : x <= 20 ? 2 : x <= 27 ? 3 : 4;
+        if (scale === 'A') return x <= 7 ? 0 : x <= 9 ? 1 : x <= 14 ? 2 : x <= 19 ? 3 : 4;
+        return x <= 14 ? 0 : x <= 18 ? 1 : x <= 25 ? 2 : x <= 33 ? 3 : 4;
+      }
+
+      var ADVICE = {
+        D: [
+          'Tâm trạng của bạn đang khá ổn định. Cứ tiếp tục duy trì những thói quen tốt và những điều khiến bạn thấy vui nhé.',
+          'Dạo này bạn hơi trũng xuống một chút, và điều đó rất bình thường. Thử quay lại với những việc bạn từng thích và chia sẻ với một người bạn tin tưởng.',
+          'Bạn đang mang trong mình khá nhiều cảm giác nặng nề. Đừng tự gánh một mình — hãy nói chuyện với người thân, thầy cô hoặc phòng tư vấn tâm lý của trường.',
+          'Những cảm xúc buồn bã đang ảnh hưởng nhiều đến bạn, và bạn xứng đáng được hỗ trợ. Hãy tìm đến một người lớn đáng tin hoặc gọi một đường dây hỗ trợ bên dưới càng sớm càng tốt.',
+          'Bạn đang trải qua một giai đoạn rất khó khăn, và bạn không nên đối mặt với nó một mình. Hãy liên hệ ngay với một người lớn đáng tin, phòng tư vấn tâm lý, hoặc một đường dây hỗ trợ ở phần Tìm giúp đỡ.'
+        ],
+        A: [
+          'Mức độ lo âu của bạn đang trong ngưỡng ổn. Những bài thở và thói quen thư giãn sẽ giúp bạn giữ được sự cân bằng này.',
+          'Bạn đang hơi căng và lo hơn bình thường. Thử bài thở vuông ở đầu trang, ngủ đủ giấc và giảm bớt thời gian trên mạng xã hội xem sao.',
+          'Sự lo âu đang khá rõ rệt. Hãy tập vài kỹ thuật thư giãn đều đặn, và cân nhắc chia sẻ với một người bạn tin tưởng hoặc thầy cô.',
+          'Lo âu đang ảnh hưởng nhiều đến bạn. Đây là lúc nên nói chuyện với một người lớn đáng tin hoặc chuyên gia tâm lý để được đồng hành.',
+          'Mức độ lo âu này khá cao và có thể khiến bạn rất mệt. Bạn không cần chịu đựng một mình — hãy tìm sự hỗ trợ từ người lớn đáng tin hoặc một đường dây bên dưới.'
+        ],
+        S: [
+          'Bạn đang xoay xở với áp lực khá tốt. Cứ giữ cho mình những khoảng nghỉ nhỏ mỗi ngày nhé.',
+          'Bạn đang chịu một chút áp lực. Hãy chia nhỏ việc học, nghỉ ngơi hợp lý và dành vài phút mỗi ngày cho điều khiến bạn thấy dễ chịu.',
+          'Áp lực đang dồn lên bạn khá nhiều. Thử sắp xếp lại lịch, ưu tiên việc quan trọng và đừng ngại nhờ giúp đỡ khi cần.',
+          'Căng thẳng đang ở mức cao và ảnh hưởng đến bạn. Hãy chậm lại, chăm sóc bản thân và chia sẻ với một người bạn tin tưởng.',
+          'Mức căng thẳng này rất lớn. Hãy cho bản thân được nghỉ, và tìm đến một người lớn đáng tin hoặc chuyên gia để cùng tháo gỡ.'
+        ]
+      };
+
+      // Build questions
+      var frag = document.createDocumentFragment();
+      ITEMS.forEach(function (it, i) {
+        var q = document.createElement('div'); q.className = 'quiz-q';
+        var txt = document.createElement('div'); txt.className = 'qtext';
+        var num = document.createElement('span'); num.className = 'qnum'; num.textContent = (i + 1) + '.';
+        var stmt = document.createElement('span'); stmt.textContent = it[0];
+        txt.appendChild(num); txt.appendChild(stmt);
+        q.appendChild(txt);
+        var opts = document.createElement('div'); opts.className = 'qopts';
+        opts.setAttribute('role', 'radiogroup'); opts.setAttribute('aria-label', 'Câu ' + (i + 1) + ': ' + it[0]);
+        OPTS.forEach(function (o) {
+          var lab = document.createElement('label'); lab.className = 'qopt';
+          var inp = document.createElement('input'); inp.type = 'radio'; inp.name = 'q' + i; inp.value = o[1];
+          var sp = document.createElement('span'); sp.innerHTML = o[0] + '<small>' + o[1] + '</small>';
+          lab.appendChild(inp); lab.appendChild(sp);
+          opts.appendChild(lab);
+        });
+        q.appendChild(opts);
+        frag.appendChild(q);
+      });
+      form.appendChild(frag);
+
+      var progressB = document.querySelector('#quizProgress b');
+      var submitBtn = document.getElementById('quizSubmit');
+      var resultsBox = document.getElementById('quizResults');
+      var resCards = document.getElementById('resCards');
+      var ctaBox = document.getElementById('quizCta');
+      var trac = document.getElementById('trac-nghiem');
+
+      function answeredCount() { return form.querySelectorAll('input:checked').length; }
+
+      form.addEventListener('change', function () {
+        var n = answeredCount();
+        progressB.textContent = n;
+        submitBtn.disabled = n < TOTAL;
+      });
+
+      function score() {
+        var sub = { D: 0, A: 0, S: 0 };
+        ITEMS.forEach(function (it, i) {
+          var sel = form.querySelector('input[name="q' + i + '"]:checked');
+          if (sel) sub[it[1]] += parseInt(sel.value, 10);
+        });
+        sub.D *= 2; sub.A *= 2; sub.S *= 2;
+        return sub;
+      }
+
+      submitBtn.addEventListener('click', function () {
+        if (answeredCount() < TOTAL) return;
+        var sub = score();
+        resCards.innerHTML = '';
+        var maxLv = 0;
+        var pending = [];
+        ['D', 'A', 'S'].forEach(function (k) {
+          var x = sub[k], lv = band(k, x);
+          if (lv > maxLv) maxLv = lv;
+          var pct = Math.min(Math.round(x / 42 * 100), 100);
+          var card = document.createElement('div'); card.className = 'rcard';
+          card.innerHTML =
+            '<h3>' + LABELS[k] + '<span class="rpill lv' + lv + '">' + NAMES[lv] + '</span></h3>' +
+            '<div class="rscore">' + x + '<span> / 42</span></div>' +
+            '<div class="rbar"><div class="rbar-fill fill' + lv + '"></div></div>' +
+            '<p class="radvice">' + ADVICE[k][lv] + '</p>';
+          resCards.appendChild(card);
+          pending.push([card.querySelector('.rbar-fill'), pct]);
+        });
+        ctaBox.classList.toggle('show', maxLv >= 2);
+        resultsBox.classList.add('show');
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            pending.forEach(function (p) { p[0].style.width = p[1] + '%'; });
+          });
+        });
+        var y = resultsBox.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({ top: y, behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+      });
+
+      document.getElementById('quizReset').addEventListener('click', function () {
+        form.reset();
+        progressB.textContent = '0';
+        submitBtn.disabled = true;
+        resultsBox.classList.remove('show');
+        ctaBox.classList.remove('show');
+        var y = trac.getBoundingClientRect().top + window.pageYOffset - 70;
+        window.scrollTo({ top: y, behavior: root.classList.contains('reduce-motion') ? 'auto' : 'smooth' });
+      });
+
+      if (window.ScrollTrigger && typeof window.ScrollTrigger.refresh === 'function') {
+        window.ScrollTrigger.refresh();
       }
     })();
   </script>
